@@ -1,6 +1,13 @@
 <template>
   <v-app dark>
-    <v-navigation-drawer v-model="drawer" mini-variant clipped fixed app>
+    <v-navigation-drawer
+      v-model="drawer"
+      mini-variant
+      absolute
+      clipped
+      fixed
+      app
+    >
       <v-list>
         <v-list-item
           v-for="(item, i) in items"
@@ -21,7 +28,7 @@
     <v-app-bar clipped-left fixed app>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
 
-      <v-card-title>{{ siteTitle }}</v-card-title>
+      <v-toolbar-title>{{ siteTitle }}</v-toolbar-title>
     </v-app-bar>
     <v-main>
       <v-container>
@@ -49,7 +56,7 @@ export default {
           to: '/',
         },
         {
-          icon: 'mdi-chart-bubble',
+          icon: 'mdi-heart',
           title: 'Favorites',
           to: '/favorites',
         },
