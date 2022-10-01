@@ -41,27 +41,33 @@
   </v-app>
 </template>
 
-<script>
-export default {
-  name: 'DefaultLayout',
-  data() {
+<script lang="ts">
+import { defineComponent, ref, reactive } from '@nuxtjs/composition-api'
+
+export default defineComponent({
+  setup() {
+    const drawer = ref(false)
+    const fixed = ref(false)
+    const siteTitle = ref('Movies')
+    const items = reactive([
+      {
+        icon: 'mdi-apps',
+        title: 'Welcome',
+        to: '/',
+      },
+      {
+        icon: 'mdi-heart',
+        title: 'Favorites',
+        to: '/favorites',
+      },
+    ])
+
     return {
-      drawer: false,
-      fixed: false,
-      siteTitle: 'Movies',
-      items: [
-        {
-          icon: 'mdi-apps',
-          title: 'Welcome',
-          to: '/',
-        },
-        {
-          icon: 'mdi-heart',
-          title: 'Favorites',
-          to: '/favorites',
-        },
-      ],
+      drawer,
+      fixed,
+      siteTitle,
+      items,
     }
   },
-}
+})
 </script>
