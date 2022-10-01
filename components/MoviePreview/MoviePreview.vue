@@ -36,7 +36,7 @@
       </v-btn>
 
       <v-spacer />
-      <v-btn icon @click="like">
+      <v-btn icon @click="like(movie.id)">
         <v-icon :color="likeColor">mdi-heart</v-icon>
       </v-btn>
     </v-card-actions>
@@ -49,8 +49,9 @@ import {
   PropType,
   ref,
   computed,
+  useContext,
 } from '@nuxtjs/composition-api'
-import { MovieData } from '~/types/MovieData'
+import { MovieData } from '@/types/MovieData'
 
 export default defineComponent({
   name: 'MoviePreview',
@@ -64,13 +65,16 @@ export default defineComponent({
 
   setup() {
     const isLiked = ref(false)
+    const store = useContext()
 
     const likeColor = computed(() => {
       return isLiked.value ? 'pink lighten-2' : 'white'
     })
 
-    function like() {
+    function like(movieId: number | string) {
       isLiked.value = !isLiked.value
+
+      store.store.commit('favourite', movieId)
     }
 
     return { like, isLiked, likeColor }

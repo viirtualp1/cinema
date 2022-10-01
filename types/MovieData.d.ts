@@ -4,6 +4,7 @@ export interface RatingData {
 }
 
 export interface MovieData {
+  id: number | string
   title: string
   description: string
   image: string
