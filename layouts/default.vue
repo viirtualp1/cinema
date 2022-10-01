@@ -28,7 +28,7 @@
     <v-app-bar clipped-left fixed app>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
 
-      <v-toolbar-title>{{ siteTitle }}</v-toolbar-title>
+      <v-toolbar-title>{{ SITE_TITLE }}</v-toolbar-title>
     </v-app-bar>
     <v-main>
       <v-container>
@@ -43,12 +43,12 @@
 
 <script lang="ts">
 import { defineComponent, ref, reactive } from '@nuxtjs/composition-api'
+import { SITE_TITLE } from '~/utils/constans'
 
 export default defineComponent({
   setup() {
     const drawer = ref(false)
     const fixed = ref(false)
-    const siteTitle = ref('Movies')
     const items = reactive([
       {
         icon: 'mdi-apps',
@@ -65,7 +65,7 @@ export default defineComponent({
     return {
       drawer,
       fixed,
-      siteTitle,
+      SITE_TITLE,
       items,
     }
   },

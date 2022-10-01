@@ -1,5 +1,7 @@
 import { MovieData } from '~/types/MovieData'
 
+export const SITE_TITLE = 'MOVIES'
+
 export const MOVIES = [
   {
     title: 'Сорвиголова',

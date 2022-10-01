@@ -10,7 +10,7 @@
 
 <script lang="ts">
 import { defineComponent } from '@nuxtjs/composition-api'
-import { MOVIES } from '@/types/Movies'
+import { MOVIES } from '@/utils/constans'
 import MoviePreview from '@/components/MoviePreview/MoviePreview.vue'
 
 export default defineComponent({
