@@ -9,15 +9,16 @@
         cols="12"
         md="3"
       >
-        <movie-preview :movie="movie" />
+        <movie-preview :movie="movie" is-favourite />
       </v-col>
     </v-row>
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent, useContext, computed } from '@nuxtjs/composition-api'
+import { defineComponent, computed } from '@nuxtjs/composition-api'
 import MoviePreview from '@/components/MoviePreview/MoviePreview.vue'
+import { useMoviesStore } from '@/store'
 
 export default defineComponent({
   components: {
@@ -25,10 +26,10 @@ export default defineComponent({
   },
 
   setup() {
-    const store = useContext()
+    const moviesStore = useMoviesStore()
 
     const favouriteMovies = computed(() => {
-      return store.store.state.favouriteMovies
+      return moviesStore.getFavouriteMovies
     })
 
     return {

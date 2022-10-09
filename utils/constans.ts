@@ -4,6 +4,7 @@ export const SITE_TITLE = 'MOVIES'
 
 export const MOVIES = [
   {
+    id: 1,
     title: 'Сорвиголова',
     description:
       'В результате несчастного случая юный Мэтт Мердок теряет зрение, но зато все остальные его чувства усиливаются в десятки раз. Повзрослев, Мердок понимает, что хочет посвятить свою жизнь защите людей и борьбе с преступностью. Днем он — успешный адвокат, а ночью — мститель в маске по прозвищу Сорвиголова.',
@@ -16,6 +17,7 @@ export const MOVIES = [
     },
   } as MovieData,
   {
+    id: 2,
     title: 'Доктор Кто',
     description:
       'Пришелец, меняющий внешность, спасает Вселенную от космических злодеев. Научная фантастика с британским юмором',
@@ -28,6 +30,7 @@ export const MOVIES = [
     },
   } as MovieData,
   {
+    id: 3,
     title: 'Флэш',
     description:
       'После удара молнии Барри становится самым быстрым человеком в мире. История любимого супергероя Шелдона Купера',
@@ -40,6 +43,7 @@ export const MOVIES = [
     },
   } as MovieData,
   {
+    id: 4,
     title: 'Веном',
     description:
       'После удара молнии Барри становится самым быстрым человеком в мире. История любимого супергероя Шелдона Купера',
@@ -52,6 +56,7 @@ export const MOVIES = [
     },
   } as MovieData,
   {
+    id: 5,
     title: 'Веном',
     description:
       'После удара молнии Барри становится самым быстрым человеком в мире. История любимого супергероя Шелдона Купера',
@@ -64,30 +69,7 @@ export const MOVIES = [
     },
   } as MovieData,
   {
-    title: 'Веном',
-    description:
-      'После удара молнии Барри становится самым быстрым человеком в мире. История любимого супергероя Шелдона Купера',
-    image:
-      'https://kinopoisk-ru.clstorage.net/J2OR95368/c2c9b3LD/tEwHF5Zrto1oFB_W_LPSR_cWM0JH71JMkrWO4sy0A-GK454QcKf8PT7H0MFo2sTmHa2kYuBX24ghHKrtdTWWB1CIIgbmXkepuJFaNyim0reCYpeysitWmBfRzzP5YbYTeeEdMueFn8-8xRbVfI61E-g4UGO1wt-d4Hge-lbxtJRmrgU2NEoUq1hFPYJ9o1G3V4Q2IJdslO9i1ZiiLjXh4LtyHBNWpw4P3nblRV3OwrDJqlCCl5K-j-bJfZv2dzbkZ111Nnf6x1oKRX5Af_OAZZe195CGrQf8g8QIkE9XQWGaI_5zp2cvfR5kFNQsfGNjermTEdQw7fzHOV77lyX3ZEQ-ZYfk-dT7G4fewr5gsYVnxYVSFI10fHOluaMPtkNiq2PNobdFnv6OlOS3Dq6A4-q4QjOH0gx9ZBp8CIVUlWRVX-ZUR2r1G2h0H6LMMdPlVyQl8aaONm2TZcpCTYawQtqzviD2tOwMXdWlJW7cQbO52OCy97FP34e5Xet3h-Um1nwFxpT5xunLVV5jbBGDNBY0hRI1LQYvorYLUqyW0VL6o64ih0Wenf42l0RMnXEyS_nDMGWSHPwlOc7JlBSUBlR-54Z2GTf6KOV9oM-zgFVXpZWyxDxWrgGFumA9NXGASvJds5c1f_-N5VdlnrzzoQr4wLKF4Jw_xftOmSXXRvVUf6RktGhFazi2z7N_APG0NZTXYnY89_whtEjj_UZj4kgCPDDkl04trFYGZG2d8zA4-qPB9yC_3meaT4slh4VFVo-0NYV7pJqI9k2w7xGRJ8XldCAV_oSOQeaqww-GgSOJYD1jpqbPz-wGtVcvjsHiC-mCMcQTbH92O6ya10fWFwUNpAZWC5V4qtbuoC5TUAQ1FjVj1Wy0XnP0eQIfpnJzuvO9QJX1LXy8pQRUfH_jU3npIkL0Eq6eJxoequQ2lrVUn5c0BSsF2PrXD8Bv86PlVbVnwbdOxh3ztqqQLESj4DtCbmP3Jw2svjcFZa3MQsPL2mBABLC8f_cILUq3xuSnFAwnl4Sr1itrhj5BP6LyVCXUFdHl30aPgeeJA0410LG64i_DVUfsLm-ndPZez6JxacjA8qXR3v_Wi494N_f3ZOX9B7XnKxXJedYdwT4DMQVUFxYhtjw272Nm-RFeNKGSK2BNQpYVTG4upCVnX75C8GkpwgHlEi--Vfv9e3WXRxdUjXR3prs3W2tnDtKOIQJ35HTm0hdPtNxwZquzTYdzoqqBnBA0JQ78TkVE1v0-0tB42jDA9aEOPHXaf5vmpcbGJG33NKV6FjiYRTwTLcHxxfem5bAVnMffoidacDzmISOa8i_ApoeMnI-UhSZu3wHhaBmhoAZgbY1lqL-7B6Smd3cPVmWU2rVomqV8Qp9BIfXVVBdx1Q0UjbGFSODuxfPSSQPuAZVnDj5t5XTmjY5ioDvIYdD3wU5t9jodSTX29QRWn-QmJdh2uwrlTCIvw2DX9CTHMlS-pE5yhlrC3bSAEpoDPcD1573fHmflRx2PU1MqeHMAVkBsvyXrTqsGNMQWFA7HROaqVispxq5DT-NwRJYk9AB1LQU8gEYqw1-lo_P4Ib6gdvR8L0-UJAUNHREDm_rA0BSybfw0y38o1gXm5XbuBoRF6lfrmmQvkQ_Sk9Yk55VDt35F_aJUWyA9hfBRGuJ_wUdVXL9slcW2L28wkjq5ImKkYp6e9cn821XGJ6cHT0aFduh0GQgVzKJ8MfGUl-fU4zcuhh5D1DhRT1aj4isRPfB3Fi3N3dVWF08NMaA52sHQZ0IMXnZZ7Ju3d-c2BQ-WFCVr93rrVH2Cz0KA5zUGlOAlzHU_0oepMi4WgoAoQDxzVBfPfX3G9iYvfbMyOZsi8cfC3k8l-936pJaWZNXPVFTFOmS6u-Z88v4Q08fmVVWwte6XPGAk27A9dEFT2KFfsFVW7X9v1-YlfY9yoPmKUlAEQC5flCisCQdm5peWLhamBBimKLmkD6D_UUIWpYc1codsJHwzl1sR76dho8tjvxOn9-6cfvamVixv42FICdOANVA978Y5r3vmFqbXtowGZYQKdyioJjwjfAFTtRWEl8MGziaeE_XqQ17UIcMZUd5w12fN7d_1V1ZPLVBgycnRsPXxfuzG-C179iYnJWXc98a3ePTryOYsEu0xssV2NebQ1e103vPWuSMPNcBSeMNfAlSlrP1PF1a3Dt2Rcbq54OM2oRxPRtuPGJQE5XXmPQSnR0rGKRuEj5E-sNJHlYdnILSMVZ-T5_hBb3VzsvkhvUOlB8zPDHcWBYyPQzIIalKAh9AunyfYLLnlxwaGBk50h8dp90oapi-A_3Fy1VekNwDFrxYsshVa8k00gcA4YJwgZgXcn4wExCeeb1FTaQvgcKYDHs1kq90JF5VUZnSOBBfW6qa56Kd8QN9TgwS3J8TTpcx3HMH2C3FPRFACqgPdg-akX54fN1U0z2xA0TuIUrCEow6_NmkMOTY3VMfHzCSHdOv0uouVPYN-QFGF9Dbn0bdeJI6DpikCHRWBwCmB7zC0Z33OH4UlpP9PAVEIm9CClKFPjib5TYjnxIQGZC30JaTKRjq590_QPTNRl-RGxQOGvWafceSJkhw3QmCpMaywJpe-X_33xKTtvSGxqAuCUYYQbw10WC0L9oeG5DY8FDWVWMeL-5fPw35BEvcGZ5agFz8EPXJ1yiEcx8Ax6tNdAZdl_n9-ZBdVPd1BgMvLgdHVwB7dZHivyYYEFAbkLlelV9hlyWq0fvEOUTEHNSSWAwSuhgxgt0sRbzbTUtjxzCGVB__NzYW0JI_OYrBI2DLBl7Fd3EW5fJjGVRQFlV0nF-drNSv5pS4gbRJiBWeF9sIWLbZsghSIg9428yO6US6x9BdPToxllgTujTFROGrzgbfi_65l-x-YtJaWRfbP10TF2BdLKJX8wM5TEhXURIfBlJ5H32O2OxKOtGKyO3COMmV2zEyM9cV2PH9DU_pbkbKmQr8vFxm-M',
-    tags: ['фантастика', 'боевик', 'ужасы'],
-    rating: {
-      value: 2.1,
-      reviews: 385008,
-    },
-  } as MovieData,
-  {
-    title: 'Веном',
-    description:
-      'После удара молнии Барри становится самым быстрым человеком в мире. История любимого супергероя Шелдона Купера',
-    image:
-      'https://kinopoisk-ru.clstorage.net/J2OR95368/c2c9b3LD/tEwHF5Zrto1oFB_W_LPSR_cWM0JH71JMkrWO4sy0A-GK454QcKf8PT7H0MFo2sTmHa2kYuBX24ghHKrtdTWWB1CIIgbmXkepuJFaNyim0reCYpeysitWmBfRzzP5YbYTeeEdMueFn8-8xRbVfI61E-g4UGO1wt-d4Hge-lbxtJRmrgU2NEoUq1hFPYJ9o1G3V4Q2IJdslO9i1ZiiLjXh4LtyHBNWpw4P3nblRV3OwrDJqlCCl5K-j-bJfZv2dzbkZ111Nnf6x1oKRX5Af_OAZZe195CGrQf8g8QIkE9XQWGaI_5zp2cvfR5kFNQsfGNjermTEdQw7fzHOV77lyX3ZEQ-ZYfk-dT7G4fewr5gsYVnxYVSFI10fHOluaMPtkNiq2PNobdFnv6OlOS3Dq6A4-q4QjOH0gx9ZBp8CIVUlWRVX-ZUR2r1G2h0H6LMMdPlVyQl8aaONm2TZcpCTYawQtqzviD2tOwMXdWlJW7cQbO52OCy97FP34e5Xet3h-Um1nwFxpT5xunLVV5jbBGDNBY0hRI1LQYvorYLUqyW0VL6o64ih0Wenf42l0RMnXEyS_nDMGWSHPwlOc7JlBSUBlR-54Z2GTf6KOV9oM-zgFVXpZWyxDxWrgGFumA9NXGASvJds5c1f_-N5VdlnrzzoQr4wLKF4Jw_xftOmSXXRvVUf6RktGhFazi2z7N_APG0NZTXYnY89_whtEjj_UZj4kgCPDDkl04trFYGZG2d8zA4-qPB9yC_3meaT4slh4VFVo-0NYV7pJqI9k2w7xGRJ8XldCAV_oSOQeaqww-GgSOJYD1jpqbPz-wGtVcvjsHiC-mCMcQTbH92O6ya10fWFwUNpAZWC5V4qtbuoC5TUAQ1FjVj1Wy0XnP0eQIfpnJzuvO9QJX1LXy8pQRUfH_jU3npIkL0Eq6eJxoequQ2lrVUn5c0BSsF2PrXD8Bv86PlVbVnwbdOxh3ztqqQLESj4DtCbmP3Jw2svjcFZa3MQsPL2mBABLC8f_cILUq3xuSnFAwnl4Sr1itrhj5BP6LyVCXUFdHl30aPgeeJA0410LG64i_DVUfsLm-ndPZez6JxacjA8qXR3v_Wi494N_f3ZOX9B7XnKxXJedYdwT4DMQVUFxYhtjw272Nm-RFeNKGSK2BNQpYVTG4upCVnX75C8GkpwgHlEi--Vfv9e3WXRxdUjXR3prs3W2tnDtKOIQJ35HTm0hdPtNxwZquzTYdzoqqBnBA0JQ78TkVE1v0-0tB42jDA9aEOPHXaf5vmpcbGJG33NKV6FjiYRTwTLcHxxfem5bAVnMffoidacDzmISOa8i_ApoeMnI-UhSZu3wHhaBmhoAZgbY1lqL-7B6Smd3cPVmWU2rVomqV8Qp9BIfXVVBdx1Q0UjbGFSODuxfPSSQPuAZVnDj5t5XTmjY5ioDvIYdD3wU5t9jodSTX29QRWn-QmJdh2uwrlTCIvw2DX9CTHMlS-pE5yhlrC3bSAEpoDPcD1573fHmflRx2PU1MqeHMAVkBsvyXrTqsGNMQWFA7HROaqVispxq5DT-NwRJYk9AB1LQU8gEYqw1-lo_P4Ib6gdvR8L0-UJAUNHREDm_rA0BSybfw0y38o1gXm5XbuBoRF6lfrmmQvkQ_Sk9Yk55VDt35F_aJUWyA9hfBRGuJ_wUdVXL9slcW2L28wkjq5ImKkYp6e9cn821XGJ6cHT0aFduh0GQgVzKJ8MfGUl-fU4zcuhh5D1DhRT1aj4isRPfB3Fi3N3dVWF08NMaA52sHQZ0IMXnZZ7Ju3d-c2BQ-WFCVr93rrVH2Cz0KA5zUGlOAlzHU_0oepMi4WgoAoQDxzVBfPfX3G9iYvfbMyOZsi8cfC3k8l-936pJaWZNXPVFTFOmS6u-Z88v4Q08fmVVWwte6XPGAk27A9dEFT2KFfsFVW7X9v1-YlfY9yoPmKUlAEQC5flCisCQdm5peWLhamBBimKLmkD6D_UUIWpYc1codsJHwzl1sR76dho8tjvxOn9-6cfvamVixv42FICdOANVA978Y5r3vmFqbXtowGZYQKdyioJjwjfAFTtRWEl8MGziaeE_XqQ17UIcMZUd5w12fN7d_1V1ZPLVBgycnRsPXxfuzG-C179iYnJWXc98a3ePTryOYsEu0xssV2NebQ1e103vPWuSMPNcBSeMNfAlSlrP1PF1a3Dt2Rcbq54OM2oRxPRtuPGJQE5XXmPQSnR0rGKRuEj5E-sNJHlYdnILSMVZ-T5_hBb3VzsvkhvUOlB8zPDHcWBYyPQzIIalKAh9AunyfYLLnlxwaGBk50h8dp90oapi-A_3Fy1VekNwDFrxYsshVa8k00gcA4YJwgZgXcn4wExCeeb1FTaQvgcKYDHs1kq90JF5VUZnSOBBfW6qa56Kd8QN9TgwS3J8TTpcx3HMH2C3FPRFACqgPdg-akX54fN1U0z2xA0TuIUrCEow6_NmkMOTY3VMfHzCSHdOv0uouVPYN-QFGF9Dbn0bdeJI6DpikCHRWBwCmB7zC0Z33OH4UlpP9PAVEIm9CClKFPjib5TYjnxIQGZC30JaTKRjq590_QPTNRl-RGxQOGvWafceSJkhw3QmCpMaywJpe-X_33xKTtvSGxqAuCUYYQbw10WC0L9oeG5DY8FDWVWMeL-5fPw35BEvcGZ5agFz8EPXJ1yiEcx8Ax6tNdAZdl_n9-ZBdVPd1BgMvLgdHVwB7dZHivyYYEFAbkLlelV9hlyWq0fvEOUTEHNSSWAwSuhgxgt0sRbzbTUtjxzCGVB__NzYW0JI_OYrBI2DLBl7Fd3EW5fJjGVRQFlV0nF-drNSv5pS4gbRJiBWeF9sIWLbZsghSIg9428yO6US6x9BdPToxllgTujTFROGrzgbfi_65l-x-YtJaWRfbP10TF2BdLKJX8wM5TEhXURIfBlJ5H32O2OxKOtGKyO3COMmV2zEyM9cV2PH9DU_pbkbKmQr8vFxm-M',
-    tags: ['фантастика', 'боевик', 'ужасы'],
-    rating: {
-      value: 2.1,
-      reviews: 385008,
-    },
-  } as MovieData,
-  {
+    id: 6,
     title: 'Веном',
     description:
       'После удара молнии Барри становится самым быстрым человеком в мире. История любимого супергероя Шелдона Купера',
@@ -100,3 +82,8 @@ export const MOVIES = [
     },
   } as MovieData,
 ] as const
+
+export enum COLORS {
+  PINK = 'pink lighten-2',
+  WHITE = 'white',
+}

@@ -36,8 +36,11 @@
       </v-btn>
 
       <v-spacer />
-      <v-btn icon @click="like(movie.id)">
+      <v-btn v-if="!isLiked" :disabled="isFavourite" icon @click="like(movie)">
         <v-icon :color="likeColor">mdi-heart</v-icon>
+      </v-btn>
+      <v-btn v-if="isFavourite || isLiked" icon @click="unlike(movie.id)">
+        <v-icon :color="COLORS.PINK">mdi-delete</v-icon>
       </v-btn>
     </v-card-actions>
   </v-card>
@@ -45,13 +48,14 @@
 
 <script lang="ts">
 import {
+  computed,
   defineComponent,
   PropType,
   ref,
-  computed,
-  useContext,
 } from '@nuxtjs/composition-api'
+import { useMoviesStore } from '@/store/'
 import { MovieData } from '@/types/MovieData'
+import { COLORS } from '~/utils/constans'
 
 export default defineComponent({
   name: 'MoviePreview',
@@ -61,23 +65,52 @@ export default defineComponent({
       type: Object as PropType<MovieData>,
       required: true,
     },
+
+    isFavourite: {
+      type: Boolean,
+      default: false,
+    },
   },
 
-  setup() {
+  setup(props) {
     const isLiked = ref(false)
-    const store = useContext()
+    const movieStore = useMoviesStore()
 
     const likeColor = computed(() => {
-      return isLiked.value ? 'pink lighten-2' : 'white'
+      if (props.isFavourite) {
+        return COLORS.PINK
+      }
+
+      return isLiked.value ? COLORS.PINK : COLORS.WHITE
     })
 
-    function like(movieId: number | string) {
+    function like(movie: MovieData) {
       isLiked.value = !isLiked.value
 
-      store.store.commit('favourite', movieId)
+      movieStore.$patch((state) => {
+        state.favouriteMovies.push(movie)
+      })
     }
 
-    return { like, isLiked, likeColor }
+    function unlike(movieId: string | number) {
+      isLiked.value = !isLiked.value
+
+      movieStore.$patch((state) => {
+        const movieIndex = state.favouriteMovies
+          .map((movie) => movie.id)
+          .indexOf(movieId)
+
+        state.favouriteMovies.splice(movieIndex, 1)
+      })
+    }
+
+    return { COLORS, isLiked, likeColor, like, unlike }
   },
 })
 </script>
+
+<style lang="scss">
+.disabled {
+  pointer-events: none;
+}
+</style>
